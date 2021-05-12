@@ -1,0 +1,4 @@
+/* Replace with your SQL commands */
+INSERT INTO users (id, email, first_name, last_name, hash, salt, is_active, level, created_at, updated_at)
+ VALUES ('675fd4da-b83c-4eb6-81f8-b22d258110ce','chidiebereyjoel@gmail.com','chidiebere', 'joel','8a8de0713cc77e44bfe0ea8f9d80e78232f661ef81944a38c91d315f9e900482','$2b$10$Fv/ua0CeONFQCUgTcL5rZe',true,'basic','2021-05-08 20:59:22.570478', '2021-05-09 09:03:51.340095'),
+ ('e59eb7a5-f895-4bfa-99d7-0c93cd26915a', 'joelchidieberey@gmail.com', 'chidiebere', 'joel', '9a2a633f49fc9b8939f9a1040e495d45e1eb755af6df1687cfa481c12afea933', '$2b$10$Os8Zx9trrBkHPALNtEkM.e', true, 'basic', '2021-05-09 05:32:37.962073', '2021-05-09 08:28:55.114848')

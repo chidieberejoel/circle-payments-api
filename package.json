@@ -1,0 +1,69 @@
+{
+  "name": "circle-payments-api",
+  "version": "1.0.0",
+  "description": "Circle set up for receiving USDC payments",
+  "main": "index.js",
+  "scripts": {
+    "server": "babel-node index.js",
+    "dev": "nodemon index.js --exec babel-node",
+    "build": "babel . --ignore **/node_modules --out-dir dist",
+    "start": "node dist/index.js",
+    "lint": "eslint . --fix --ignore-path .eslintignore",
+    "test": "jest",
+    "migrate": "db-migrate",
+    "migrate:up": "npm run migrate up",
+    "migrate:down": "npm run migrate down -c 200",
+    "migrate-test:up": "db-migrate up:seeds",
+    "migrate-test:down": "db-migrate down:seeds -c 200"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chidieberejoel/circle-payments-api.git"
+  },
+  "keywords": [],
+  "author": "Chidiebere Joel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chidieberejoel/circle-payments-api/issues"
+  },
+  "homepage": "https://github.com/chidieberejoel/circle-payments-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/register": "^7.13.16",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.17",
+    "@hapi/joi": "^17.1.1",
+    "apollo-server-express": "^2.23.0",
+    "apollo-server-testing": "^2.24.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "core-js": "^3.11.1",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.12",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphile-worker": "^0.11.1",
+    "graphql": "^15.5.0",
+    "helmet": "^4.5.0",
+    "js-sha256": "^0.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "openpgp": "^4.10.4",
+    "pg": "^8.6.0",
+    "regenerator-runtime": "^0.13.7",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  }
+}
